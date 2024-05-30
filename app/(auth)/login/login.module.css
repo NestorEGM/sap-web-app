@@ -8,8 +8,26 @@
   gap: 10px;
 }
 
+.title {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
 .input {
   width: 300px;
+}
+
+.input:focus {
+  outline: 1px solid #5D17DA;
 }
 
 .loginButton {
@@ -19,6 +37,11 @@
   background-color: #5D17DA;
   padding: 10px 15px;
   color: white;
+  cursor: pointer;
+}
+
+.loginButton:focus {
+  outline: 2px solid #B69EE0;
 }
 
 .error {
