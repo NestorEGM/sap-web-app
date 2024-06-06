@@ -85,14 +85,6 @@ body {
   overflow-x: hidden;
 }
 
-input {
-  width: 300px;
-  background-color: hsl(262, 52%, 95%);
-  border: none;
-  border-radius: 3px;
-  padding: 15px 5px;
-}
-
 /* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
