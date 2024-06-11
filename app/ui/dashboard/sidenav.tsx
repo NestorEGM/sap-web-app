@@ -1,7 +1,9 @@
+'use client';
 import Link from 'next/link';
 import SapLogo from '../sapLogo';
 import styles from './sidenav.module.css';
-import { BarsArrowUpIcon, CalendarDaysIcon, EyeIcon, HomeModernIcon, NewspaperIcon, UsersIcon } from '@heroicons/react/24/outline';
+import { HomeModernIcon, NewspaperIcon } from '@heroicons/react/24/outline';
+import { usePathname } from 'next/navigation';
 
 const SideNav = () => {
   return (
@@ -23,8 +25,10 @@ const SideNav = () => {
 };
 
 const NavLink = ({ href, text, icon }: { href: string, text: string, icon: React.ReactNode }) => {
+  const pathname = usePathname();
+
   return (
-    <Link href={href} className={styles.link}>
+    <Link href={href} className={`${styles.link}${pathname === href ? ' ' + styles.linkActive : ''}`}>
       {icon}
       <p className={styles.linkText}>{text}</p>
     </Link>
