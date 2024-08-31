@@ -73,8 +73,8 @@ const LoginButton = () => {
   return (
     <button className={styles.authButton} type='submit' disabled={pending} onClick={handleClick}>{
       pending ?
-        'Login...'
-        : 'Login'
+        'Iniciando sesión...'
+        : 'Iniciar sesión'
     }</button>
   );
 };
