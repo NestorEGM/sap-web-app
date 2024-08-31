@@ -35,6 +35,11 @@
   outline: 1px solid #5D17DA;
 }
 
+.input[type="password"]::-ms-reveal,
+.input[type="password"]::-ms-clear {
+  display: none;
+}
+
 .passwordIconBtn {
   cursor: pointer;
   outline: none;
