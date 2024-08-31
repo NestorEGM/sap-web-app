@@ -38,7 +38,7 @@ const Page = () => {
       </label>
       <label className={styles.label}>
         Contraseña
-        <input className={styles.input} type="password" name="password" placeholder="********" required />
+        <input className={styles.input} type={showPassword ? 'text' : 'password'} name="password" placeholder="********" required />
         <button
           className={styles.passwordIconBtn}
           onClick={handleShowPasswordClick}
